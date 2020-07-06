@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2d6a86f4-57bc-49ea-9789-b857bf6a2f86" name="Default Changelist" comment="" />
+    <list default="true" id="2d6a86f4-57bc-49ea-9789-b857bf6a2f86" name="Default Changelist" comment="first">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/oop/controller/InputOutputController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/oop/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/oop/controller/UserControllerTempl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/oop/controller/enums/UserField.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/file/users.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/oop/Run.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/oop/Run.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/oop/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/oop/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/colections/JacaCollectionsExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/colections/JacaCollectionsExample.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/oop/Run.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/oop/Run.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/oop/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/oop/model/User.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,10 +27,14 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin File" />
+        <option value="Interface" />
         <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -30,14 +47,17 @@
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1eDEYpr64NUytEsnW6Owg9WSZsA" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="settings.editor.selected.configurable" value="RainbowCSV.Settings" />
   </component>
-  <component name="RunManager" selected="Application.JacaCollectionsExample">
+  <component name="RunManager" selected="Application.Run">
     <configuration name="JacaCollectionsExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="colections.JacaCollectionsExample" />
       <module name="java_adv" />
@@ -79,8 +99,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.JacaCollectionsExample" />
         <item itemvalue="Application.Run" />
+        <item itemvalue="Application.JacaCollectionsExample" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -98,38 +118,51 @@
     </task>
     <servers />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="a" />
+    <MESSAGE value="first" />
+    <option name="LAST_COMMIT_MESSAGE" value="first" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="605" y="114" key="#com.intellij.ide.util.MemberChooser" timestamp="1593866087684">
+    <state x="605" y="114" key="#com.intellij.ide.util.MemberChooser" timestamp="1593950501289">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="605" y="114" key="#com.intellij.ide.util.MemberChooser/0.0.1600.860@0.0.1600.860" timestamp="1593866087684" />
+    <state x="605" y="114" key="#com.intellij.ide.util.MemberChooser/0.0.1600.860@0.0.1600.860" timestamp="1593950501289" />
     <state x="523" y="119" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1593847943940">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="523" y="119" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1600.860@0.0.1600.860" timestamp="1593847943940" />
-    <state width="1557" height="206" key="GridCell.Tab.0.bottom" timestamp="1593892147925">
+    <state x="454" y="23" key="CommitChangelistDialog2" timestamp="1593937406271">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="206" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1593892147925" />
-    <state width="1557" height="206" key="GridCell.Tab.0.center" timestamp="1593892147925">
+    <state x="454" y="23" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1593937406271" />
+    <state width="1557" height="206" key="GridCell.Tab.0.bottom" timestamp="1593954062112">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="206" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1593892147925" />
-    <state width="1557" height="206" key="GridCell.Tab.0.left" timestamp="1593892147925">
+    <state width="1557" height="206" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1593954062112" />
+    <state width="1557" height="206" key="GridCell.Tab.0.center" timestamp="1593954062112">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="206" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1593892147925" />
-    <state width="1557" height="206" key="GridCell.Tab.0.right" timestamp="1593892147925">
+    <state width="1557" height="206" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1593954062112" />
+    <state width="1557" height="206" key="GridCell.Tab.0.left" timestamp="1593954062112">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="206" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1593892147925" />
-    <state width="449" height="50" key="javadoc.popup.new" timestamp="1593886745959">
+    <state width="1557" height="206" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1593954062112" />
+    <state width="1557" height="206" key="GridCell.Tab.0.right" timestamp="1593954062112">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="449" height="50" key="javadoc.popup.new/0.0.1600.860@0.0.1600.860" timestamp="1593886745959" />
-    <state x="541" y="72" key="refactoring.ChangeSignatureDialog" timestamp="1593864200305">
+    <state width="1557" height="206" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1593954062112" />
+    <state x="301" y="72" key="SettingsEditor" timestamp="1594049618742">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="541" y="72" key="refactoring.ChangeSignatureDialog/0.0.1600.860@0.0.1600.860" timestamp="1593864200305" />
+    <state x="301" y="72" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1594049618742" />
+    <state width="449" height="50" key="javadoc.popup.new" timestamp="1593953670719">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="449" height="50" key="javadoc.popup.new/0.0.1600.860@0.0.1600.860" timestamp="1593953670719" />
+    <state x="541" y="72" key="refactoring.ChangeSignatureDialog" timestamp="1593939746380">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="541" y="72" key="refactoring.ChangeSignatureDialog/0.0.1600.860@0.0.1600.860" timestamp="1593939746380" />
   </component>
 </project>
