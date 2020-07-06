@@ -8,31 +8,9 @@ import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 import java.util.Scanner;
 
-//public abstract class InputOutputController {
-//    //globalna ściezka bezpośrednia do pliku
-//    private String usersFilePath = "C:\\Users\\ghys\\Documents\\kurs_java\\java_adv\\src\\main\\resources\\file\\users.csv";
-//
-//    public void saveUsersToFile(){
-//
-//    }
-//
-//
-//    public void readUsersFile() throws FileNotFoundException {
-//        try {
-//            Scanner scanner = new Scanner(new File(usersFilePath));
-//            while (scanner.hasNextLine()){
-//
-//            }
-//        }catch (FileNotFoundException e){
-//            e.printStackTrace();
-//        }
-//
-//
-//    }
-//}
 public abstract class InputOutputController {
     // globalna ścieżka bezpośrednia do pliku
-    private String usersFilePath = "C:\\Users\\ghys\\Documents\\kurs_java\\java_adv\\src\\main\\resources\\file\\users.csv2";
+    private String usersFilePath = "C:\\Users\\ghys\\Documents\\kurs_java\\java_adv\\src\\main\\resources\\file\\users.csv";
 
     public void saveUsersToFile(){
         try {

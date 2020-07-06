@@ -1,45 +1,49 @@
 package oop.controller;
-//Interfejs -> czyli szablon wymagań dla klasy go implementującej
 
 import oop.controller.enums.UserField;
 import oop.model.User;
 import oop.model.enums.Gender;
 import oop.model.enums.Role;
 
-import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Set;
 
+// Interfejs -> czyli szablon wymagań dla klasy go implementującej
 public interface UserControllerTempl {
-    //pole statyczne finalne
+    // pole statyczne finalne
     List<User> users = new ArrayList<>(
-        Arrays.asList(
-      new  User("Adam","Kowalski","ghys@wp.pl","123","885447184",Gender.MAN)
-                )
+//            Arrays.asList(
+//                    new User("Adam", "Kowalski", "ak@ak.pl", "ak", "123-123-123", Gender.MAN),
+//                    new User("Jan", "Nowak", "jn@jn.pl", "jn", "333-123-123", Gender.MAN),
+//                    new User("Anna", "Lis", "al@al.pl", "al", "444-231-823", Gender.WOMAN)
+//            )
     );
 
-    //metoda abstrakcyjna ->metoda nie posiadająca ciała - implementacji -> sygnatura metody
-    //[typ zwacanej wartości / void] [nazwa metody]  ([argunety/ bez argumentów]);
-    //rejestracja
-    public void registerUser(User user) throws NoSuchAlgorithmException;
-    //logowanie
-    boolean loginUser (String email, String password);
-    //wyszukiwanie
+    // metoda abstrakcyjna -> metoda nie posiadająca ciała - implementacji -> sygnatura metody
+    // [typ zwrcanej wartości / void] [nazwa metody] ( [argument-y / bez argumentów] );
+    // rejestracja
+    void registerUser(User user);
+
+    // logowanie
+    boolean loginUser(String email, String password);
+
+    // wyszukiwanie
     User findUserById(int userId);
-    //update password
+
+    // zmiana hasła
     void updateUserPassword(int userId, String newPassword);
-    //delete user
-    void  deleteUserById(int userId);
-    //add/drop role
-    void updateRole();
+
+    // usunięcie użytkownika
+    void deleteUserById(int userId);
+
+    // zmiana ról
     void updateRole(int userId, Set<Role> newRoles);
-    //wypisanie wszystkich użytkowników
+
+    // wypisanie wszystkich użytkowników
     List<User> findAllUsers();
-    //wypisanie użytkowników posortowanych po argumencie
+
+    // wypisanie użytkowników posortowanych po argumencie
     List<User> findAllUsersOrderByArg(UserField userField, boolean asc);
-
-
-
 }
