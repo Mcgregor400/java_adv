@@ -1,19 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2d6a86f4-57bc-49ea-9789-b857bf6a2f86" name="Default Changelist" comment="first">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/oop/controller/InputOutputController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/oop/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/oop/controller/UserControllerTempl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/oop/controller/enums/UserField.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/file/users.csv" afterDir="false" />
+    <list default="true" id="2d6a86f4-57bc-49ea-9789-b857bf6a2f86" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/oop/Run.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/oop/Run.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/oop/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/oop/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/colections/JacaCollectionsExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/colections/JacaCollectionsExample.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/oop/Run.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/oop/Run.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/oop/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/oop/model/User.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,12 +105,21 @@
       <option name="presentableId" value="Default" />
       <updated>1593847813466</updated>
     </task>
+    <task id="LOCAL-00001" summary="monday">
+      <created>1594049690939</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1594049690939</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="a" />
     <MESSAGE value="first" />
-    <option name="LAST_COMMIT_MESSAGE" value="first" />
+    <MESSAGE value="monday" />
+    <option name="LAST_COMMIT_MESSAGE" value="monday" />
   </component>
   <component name="WindowStateProjectService">
     <state x="605" y="114" key="#com.intellij.ide.util.MemberChooser" timestamp="1593950501289">
@@ -132,10 +130,10 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="523" y="119" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1600.860@0.0.1600.860" timestamp="1593847943940" />
-    <state x="454" y="23" key="CommitChangelistDialog2" timestamp="1593937406271">
+    <state x="454" y="23" key="CommitChangelistDialog2" timestamp="1594049689757">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="454" y="23" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1593937406271" />
+    <state x="454" y="23" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1594049689757" />
     <state width="1557" height="206" key="GridCell.Tab.0.bottom" timestamp="1593954062112">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
