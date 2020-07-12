@@ -13,13 +13,7 @@ import java.util.Set;
 // Interfejs -> czyli szablon wymagań dla klasy go implementującej
 public interface UserControllerTempl {
     // pole statyczne finalne
-    List<User> users = new ArrayList<>(
-//            Arrays.asList(
-//                    new User("Adam", "Kowalski", "ak@ak.pl", "ak", "123-123-123", Gender.MAN),
-//                    new User("Jan", "Nowak", "jn@jn.pl", "jn", "333-123-123", Gender.MAN),
-//                    new User("Anna", "Lis", "al@al.pl", "al", "444-231-823", Gender.WOMAN)
-//            )
-    );
+    List<User> users = new ArrayList<>();
 
     // metoda abstrakcyjna -> metoda nie posiadająca ciała - implementacji -> sygnatura metody
     // [typ zwrcanej wartości / void] [nazwa metody] ( [argument-y / bez argumentów] );
@@ -45,5 +39,5 @@ public interface UserControllerTempl {
     List<User> findAllUsers();
 
     // wypisanie użytkowników posortowanych po argumencie
-    List<User> findAllUsersOrderByArg(UserField userField, boolean asc);
+    List<User> findAllUsersOrderByEmail(boolean asc);
 }

@@ -5,10 +5,10 @@ import oop.controller.UserController;
 import oop.controller.UserControllerTempl;
 import oop.model.User;
 import oop.model.enums.Gender;
+import oop.model.enums.Role;
 
-import java.util.InputMismatchException;
-import java.util.List;
-import java.util.Scanner;
+import java.sql.Array;
+import java.util.*;
 import java.util.regex.Pattern;
 
 public class Run extends InputOutputController {
@@ -22,7 +22,8 @@ public class Run extends InputOutputController {
         run.readUsersFromFile();
         // -------------------------
         while(true) {
-            System.out.println("Co chcesz zrobic? \n1.Rejestracja \n2.Lista użytkowników \n3.Logowanie \n4.Zmień hasło \nQ.Wyjście");
+            System.out.println("Co chcesz zrobic? \n1.Rejestracja \n2.Lista użytkowników \n3.Logowanie \n4.Zmień hasło " +
+                    "\n5.Usuń użytkownika \n6.Wypisz posortowanych użytkowników \n7.Przypisz role \nQ.Wyjście");
             String choice = scanner.nextLine().toUpperCase();
             if(choice.equals("1")){
                 System.out.println("Podaj imię:");
@@ -49,7 +50,7 @@ public class Run extends InputOutputController {
                     continue;
                 }
                 //---
-                Gender gender = genderInput.equals("M") ? Gender.MAN : Gender.WOMAN ;
+                Gender gender = genderInput.equals("M") ? Gender.MAN : Gender.WOMAN;
                 System.out.println("Podaj telefon (000-000-000):");
                 String phone = scanner.nextLine();
                 //---
@@ -69,17 +70,60 @@ public class Run extends InputOutputController {
                 System.out.println("Podaj hasło:");
                 String password = scanner.nextLine();
                 uc.loginUser(email, password);
-            } else if (choice.equals("4")){
+            } else if (choice.equals("4")) {
                 try {
                     System.out.println("Podaj id:");
                     int userId = Integer.valueOf(scanner.nextLine());
                     System.out.println("Podaj nowe hasło:");
                     String newPassword = scanner.nextLine();
                     uc.updateUserPassword(userId, newPassword);
+                } catch (InputMismatchException e) {
+                    System.out.println("Błędny id");
+                }
+            } else if (choice.equals("5")){
+                try {
+                    System.out.println("Podaj id użytkownika, którego chcesz usunąć");
+                    int userId = Integer.valueOf(scanner.nextLine());
+                    uc.deleteUserById(userId);
                 } catch (InputMismatchException e){
                     System.out.println("Błędny id");
                 }
-            } else if (choice.equals("Q")){
+            } else if (choice.equals("6")){
+                System.out.println("Wybierz typ sortowania ASC - rosnąco, DESC - malejąco");
+                boolean asc = true;
+                String decision = scanner.nextLine();
+                if(decision.toUpperCase().equals("DESC")){
+                    asc = false;
+                }
+                uc.findAllUsersOrderByEmail(asc).forEach(user -> System.out.println(user));
+            } else if(choice.equals("7")){
+                try {
+                    System.out.println("Podaj id użytkownika");
+                    int userId = Integer.valueOf(scanner.nextLine());
+                    Set<Role> roles = new HashSet<>();
+                    // wybór ról
+                    while(true){
+                        System.out.println("Wybierz rolę (Q-kończę wybór):");
+                        Arrays.stream(Role.values()).forEach(role -> System.out.println(role.ordinal() + ". " + role));
+                        String decision = scanner.nextLine();
+                        if(decision.equals("0")){
+                            roles.add(Role.ROLE_USER);
+                        } else if(decision.equals("1")){
+                            roles.add(Role.ROLE_ADMIN);
+                        } else if (decision.equals("2")){
+                            roles.add(Role.ROLE_VIEWER);
+                        } else if (decision.toUpperCase().equals("Q")){
+                            System.out.println("Zaktualizowano zbiór ról: " + roles);
+                            break;
+                        } else {
+                            System.out.println("Błędny wybór");
+                        }
+                    }
+                    uc.updateRole(userId, roles);
+                } catch (InputMismatchException e){
+                    System.out.println("Błędny id");
+                }
+            } else if (choice.equals("Q")) {
                 run.saveUsersToFile();
                 System.out.println("Wyjście");
                 break;
