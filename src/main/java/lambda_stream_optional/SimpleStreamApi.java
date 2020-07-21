@@ -1,9 +1,6 @@
 package lambda_stream_optional;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.UnknownFormatConversionException;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class SimpleStreamApi {
@@ -75,6 +72,6 @@ public class SimpleStreamApi {
 //        System.out.println("MIN: " + ssa.getMin());
 //        System.out.println("MAX: " + ssa.getMax());
 //        System.out.println("AVG: " + ssa.getAvg());
-        ssa.getNumbersGreatherThan(5);
+          ssa.getNumbersGreatherThan(5);
     }
 }

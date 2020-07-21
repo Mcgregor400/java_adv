@@ -1,11 +1,13 @@
 package lambda_stream_optional;
 import oop.model.User;
 import oop.model.enums.Gender;
-import oop.model.enums.Role;import java.time.LocalDateTime;
+import oop.model.enums.Role;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
-import java.util.List;public interface InMemoryData {
+import java.util.List;
+public interface InMemoryData {
     List<User> users = new ArrayList<>(
             Arrays.asList(
                     new User(1, "Adam", "Kowalski", "ak@ak.pl", "ak", "123-123-123", Gender.MAN,
@@ -28,6 +30,7 @@ import java.util.List;public interface InMemoryData {
                             LocalDateTime.of(2020, 5, 5, 13, 10, 10),
                             false,
                             true)
+
             )
     );
 }

@@ -61,7 +61,7 @@ public class Run extends InputOutputController {
                 }
                 //---
 
-                uc.registerUser(new User(name, lastName, email, password, phone, gender));
+             //   uc.registerUser(new User(name, lastName, email, password, phone, gender));
             } else if(choice.equals("2")) {
                 uc.findAllUsers().forEach(user -> System.out.println(user));
             } else if (choice.equals("3")) {

@@ -1,15 +1,18 @@
 package lambda_stream_optional;
 
+import jdk.jfr.Name;
 import oop.model.User;
 import oop.model.enums.Gender;
 import oop.model.enums.Role;
 
 import java.util.*;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class StreamApiWithModel {
     // metoda wypisująca zawartość listy users z InMemoryData
     public void getAllUsers() {
+       // InMemoryData.users.forEach(System.out::println);
         InMemoryData.users.forEach(System.out::println);
     }
 
@@ -33,6 +36,13 @@ public class StreamApiWithModel {
                 .filter(user -> user.getGender().equals(Gender.WOMAN))
                 .count();
     }
+//    public Stream<User> getHys(Name name) {
+//      return   InMemoryData.users.stream()
+//                .filter(user -> user.getName().contains()).collect(Collectors.toList());
+//
+//
+//    }
+
 
     // metoda zwracająca listę użytkowników zawierającą rolę podaną w argumencie metody
     public List<User> getAllUsersContainsRole(Role role) {
@@ -69,13 +79,14 @@ public class StreamApiWithModel {
     public static void main(String[] args) {
         StreamApiWithModel sapi = new StreamApiWithModel();
 //        sapi.getAllUsers();
-//        sapi.getAllUsersOrderByRegistrationDateDesc();
+    //   sapi.getAllUsersOrderByRegistrationDateDesc();
+    //    sapi.getHys(Name."adam=")
 //        System.out.println("Wynik logowania: " + sapi.loginUser("hl@hl.pl","hl"));
 //        System.out.println("Liczba kobiet: " + sapi.countAllWomen());
 //        sapi.getAllUsersContainsRole(Role.ROLE_ADMIN).forEach(System.out::println);
 //        sapi.groupUsersByGender().forEach((gender, users) -> System.out.printf("%30s | %30s\n", gender, users));
-        sapi.userRoleMapper().forEach((role, user) -> System.out.println(role + " : " + user));
-        System.out.println(sapi.userRoleMapper().get(Role.ROLE_ADMIN));
-       // System.out.println(sapi.userRoleMapper().get(Role.ROLE_USER));
+ //       sapi.userRoleMapper().forEach((role, user) -> System.out.println(role + " : " + user));
+ //       System.out.println(sapi.userRoleMapper().get(Role.ROLE_ADMIN));
+       //0 System.out.println(sapi.userRoleMapper().get(Role.ROLE_USER));
     }
 }
